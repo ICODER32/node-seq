@@ -1,0 +1,21 @@
+<div class="card">
+    <h3 class="card-header">Edit Post</h3>
+    <form class="card-body edit-post-form" id="edit-post-form">
+        <div class="form-floating mb-3">
+        <h4 for="post-title" class="form-label">Title</h4>
+        <input name="post-title" type="text" placeholder="{{post.title}}" class="form-input w-100" />
+        </div>
+
+        <div class="form-floating mb-3">
+        <h4 class="form-label" for="content">Content</h4>
+        <textarea name="content" type="text" placeholder="{{post.content}}" class="form-input w-100" style="height: 300px"/></textarea>
+        </div>
+
+        <button type="submit" class="w-100 btn btn-lg mb-3 text-light" style="background-color:#192382;">Update Post</button>
+        <button type="button" class="delete-post-btn w-100 btn btn-lg mb-3 text-light" style="background-color:#192382;">Delete Post</button>
+    </form>
+</div>
+
+
+<script src="/js/edit-post.js"></script>
+<script src="/js/delete-post.js"></script>
